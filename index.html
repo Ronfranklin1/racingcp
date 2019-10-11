@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- fontawesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+	<!-- external css -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<title> DOM Manipulation MiniCapstone </title>
+</head>
+<body>
+	<div class="jumbotron bg-white mb-0">
+		<div class="container-w">
+			<div class="row">
+				<div class="col-md-4 text-center text-md-left">
+					<h1 class="display-md-4 p-md-3">Get to know & connect with Batch 43 students of Zuitt Coding Bootcamp</h1>
+					<button class="btn btn-block btn-info" id="signButton" data-toggle="modal" data-target="#registerModal">Sign Up</button>
+				</div>
+				<!-- end of left -->
+				<div class="col-md-8 d-none d-md-block pl-5">
+					<img id="imge" src="./assets/images/bg.png">
+				</div>
+				<!-- end of right -->
+			</div><!-- end of row -->
+		</div> <!-- end of container fluid -->
+	</div>	<!-- end of jumbotron -->
+
+	<!-- register Modal -->
+	<div id="registerModal" class="modal fade">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<header class="modal-header">
+					<img src="https://cdn.dribbble.com/assets/art-banners/spaceman-b6754ff469f369e504a98de09e34a6749b6e3536dfa07e4ae4637b6ac02afdad.png" class="img-fluid">
+					<!-- modal head -->
+				</header>
+
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="username">Username: </label>
+							<input type="text" class= "form-control" placeholder="Please input a username: " id="username">
+							<span id="userErr" class="alert">
+								<small class="text-secondary" id="username">Username should be atleast 10 characters</small>
+							</span>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email: </label>
+							<input type="text" class= "form-control" id="email" placeholder="Please input an email: ">
+							<span id="emailErr" class="alert">
+								<small class="text-secondary">Enter a valid email</small>
+							</span>
+						</div>
+
+						<div class="form-group">
+							<label for="password">Password: </label>
+							<input type="password" class= "form-control" placeholder="Please input an password: " id="password">
+							<span id="pasErr" class="alert">
+								<small class="text-secondary">Password should be 8 character</small>
+							</span>
+						</div>
+
+						<div class="form-group">
+							<label for="pass2">Confirm Password: </label>
+				     		<input type="password" class="form-control" id="pass2" placeholder="Please input an password">
+				    		<span id="pass2Err" class="alert-danger"></span>							
+						</div>
+					</form>
+					<!-- modal body -->
+				</div>
+				<footer class="modal-footer">
+					<button class="btn btn-block btn-info" id="registerButton">Register</button>
+				</footer>
+			</div>
+		</div>
+	<!-- end of modal	 -->
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<!-- sweet alert 2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+	<!-- external js -->
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>
+
+	
+	
+
+
+
